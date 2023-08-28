@@ -68,11 +68,15 @@
 }
 
 
+.twoback {
+    background-color: #7AC143;
+}
 
 .row2 {
     display: flex;
     padding-top: 80px;
-    background-color: #7AC143;
+    max-width: 1500px;
+    margin: auto;
 }
 
 
@@ -144,8 +148,8 @@
 
 
 .PhoneIMG {
-    height: 680px;
-    width: 900px;
+    height: 670px;
+    /* width: 880px; */
 }
 
 .explorebtn {
@@ -297,45 +301,211 @@
 }
 
 .circle {
-    border: 1px solid white;
+    padding-top: 50px;
+    border: none;
     margin: auto;
-    width: 506px;
-    height: 506px;
+    width: 550px;
+    height: 550px;
     flex-shrink: 0;
     border-radius: 50%;
-    background: linear-gradient(180deg, #e6b865 0%, #f0ba55 100%);
+    background: linear-gradient(180deg, #f9c76e 0%, #ffcb6d 100%);
 }
+
 .circle2 {
-    border: 1px solid white;
+    border: none;
     margin: auto;
-    margin-top: 50px;
-    width: 400px;
-    height: 400px;
+    padding-top: 50px;
+    width: 420px;
+    height: 420px;
     flex-shrink: 0;
     border-radius: 50%;
-    background: linear-gradient(180deg, #efbc5c 0%, #f0ba55 100%);
+    background: linear-gradient(180deg, #efbc5c 0%, #ffc861 100%);
 }
+
 .circle3 {
-    border: 1px solid white;
+    border: none;
     margin: auto;
-    margin-top: 50px;
     width: 300px;
     height: 300px;
     flex-shrink: 0;
     border-radius: 50%;
-    background: linear-gradient(180deg, #efbc5c 0%, #f0ba55 100%);
+    background: linear-gradient(180deg, #ffaa0b 0%, #ffce71 100%);
 }
 
-
-
-
-
-.circontainer{
-    width: 50%;
-    border: 1px solid white;
+.circontainer {
     margin: auto;
+    margin-top: -625px;
 }
 
+.middle {
+    text-align: center;
+}
+
+.wellness {
+    font-size: 55px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.wellnessp {
+    font-size: 21px;
+    color: white;
+    line-height: 1.4;
+    font-family: 'Outfit', sans-serif;
+}
+
+.circlelogo {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 65px;
+}
+
+.circlegridcontainer {
+    /* width: 60%; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    max-width: 800px;
+}
+
+
+.iconcontainer {
+    width: 100px;
+    text-align: center;
+}
+
+.circleimages {
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.circlegriditem1 {
+    padding-top: 70px;
+}
+
+.circlegriditem2 {
+    padding-top: 70px;
+    justify-self: end;
+}
+
+.circlegriditem3 {
+    padding-top: 90px;
+    justify-self: end;
+    padding-right: 130px;
+}
+
+.circlegriditem4 {
+    padding-top: 90px;
+    padding-left: 130px;
+}
+
+
+.cirpara {
+    padding-top: 7px;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+.back4 {
+    background-color: #e2f4f2;
+    padding-top: 100px;
+}
+
+.clientsheading {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+}
+
+.clientcontainer {
+    max-width: 1150px;
+    padding-top: 50px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding-bottom: 80px;
+}
+
+.clientitem {
+    border: 1px solid #c72626;
+    text-align: center;
+    margin: 5px;
+}
+.photo {
+    border-radius: 0px;
+}
+.photo img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+.clientback{
+    background-color: #1b1a1a;
+    /* border-radius: 10px; */
+}
+.clientback p{
+    color: white;
+    padding-bottom: 80px;
+    padding-top: 30px;
+    font-family: 'Outfit', sans-serif;
+}
+.back5{
+    background-color: #e2f4f2;
+    padding-bottom: 150px;
+    padding-top: 120px;
+}
+.givingmargin{
+    margin: 12px;
+}
+.lastcontainer{
+    height: 450px;
+    max-width: 1150px;
+    margin: auto;
+    border-radius: 30px;
+    background-color: white;
+    background-image: url("/backlogo.png");
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+.lastgrid{
+    display: flex;
+}
+.lastgriditem1{
+    flex: 1;
+}
+.lastgriditem2{
+    flex: 1;
+    padding-left: 50px;
+}
+.imgcontainer{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+.lastheading{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    color: #2c2b2b;
+    margin-top: 50px;
+}
+.lastgriditem2 p{
+    margin-top: 20px;
+    color: #5E5E5E;
+    font-weight: 600;
+
+}
 
 
 @media screen and (max-width:1282px) {
@@ -362,11 +532,44 @@
 
     .rowitem2,
     .rowitem11 {
-        width: 55%;
+        width: 50%;
         text-align: center;
     }
+
+    .circphone2 {
+        margin-left: 0;
+    }
+
 }
 
+@media screen and (max-width:905px){
+   .lastgrid{
+    display: block;
+    padding: 0;
+   }
+   .lastcontainer{
+    height: auto;
+    text-align: center;
+   }
+   .imgcontainer{
+    display: block;
+    padding: 0;
+   }
+   .lastgriditem2{
+    padding: 0;
+   }
+   .lastgriditem2 p{
+    padding-bottom: 50px;
+    padding-top: 20px;
+    margin: 8px;
+   }
+   .lastheading{
+    margin: 8px;
+   }
+   .back5{
+    padding-top: 20px;
+   }
+}
 
 @media screen and (max-width:865px) {
     .rowcontainer {
@@ -410,8 +613,7 @@
         padding-bottom: 30px;
     }
 
-    .circphone,
-    .circphone2 {
+    .circphone {
         margin-left: 0;
     }
 }
@@ -472,6 +674,53 @@
 
 }
 
+
+@media screen and (max-width:563px) {
+    .circle {
+        width: 90vw;
+        height: 90vh;
+        padding-top: 9%;
+    }
+
+    .circle2 {
+        width: 70vw;
+        height: 70vh;
+        padding-top: 0;
+        padding-top: 7%;
+    }
+
+    .circle3 {
+        width: 50vw;
+        height: 50vh;
+        padding-top: 0;
+        padding-top: 7%;
+    }
+
+    .circlegridcontainer {
+        max-width: 95%;
+        text-align: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .circlegriditem1,
+    .circlegriditem2,
+    .circlegriditem3,
+    .circlegriditem4 {
+        padding: 0;
+        justify-self: center;
+    }
+
+    .circontainer {
+        margin-top: -300px;
+    }
+
+    .wellness {
+        padding: 10px;
+        font-size: 40px;
+    }
+
+}
 
 @media screen and (max-width:558px) {
     .row {
@@ -563,4 +812,11 @@
     .back2 {
         padding-top: 250px;
     }
+}
+@media screen and (max-width:337px){
+.photo img {
+    width: 280px;
+    height: 400px;
+    object-fit: cover;
+}
 }
