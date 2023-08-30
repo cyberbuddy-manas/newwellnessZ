@@ -124,168 +124,92 @@
 
 
 
-/* ------------------------FOOTER------------------------------------ */
+/* --------- Footer -------------------------------------------------------------------------- */
 
+.footercontainer{
+  max-width: 1200px;
+  padding-bottom: 100px;
+  margin: auto;
+}
+.fbackground{
+  background: linear-gradient(134deg, rgba(122, 193, 67, 0.50) 0%, rgba(255, 184, 49, 0.50) 100%);
 
-.footerbackground {
-  /* background-color: rgb(20, 19, 19); */
-  background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(56, 55, 55) 90.2%);
-  padding-left: 150px;
-  padding-right: 150px;
+}
+.footergrid{
+  display: flex;
 }
 
-
-.footergrid {
-  /* margin-top: 40px; */
-  padding: 10px;
-  align-items: self-start;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: auto auto auto auto;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.flogopara{
+  margin-top: 30px;
+}
+.flogopara p{
+padding: 5px;
+font-weight: 600;
+color: #453f3f;
+font-family: 'Outfit', sans-serif;
 }
 
-
-
-.footerbox1 {
-  color: white;
-  line-height: 38px;
-  list-style: none;
-  max-width: 500px;
-  padding-left: 35px;
+.fgriditem1{
+  margin-top: 30px;
+  flex: 1;
+  padding-left: 15px;
 }
-
-
-.footerbox ul {
-  list-style: none;
-}
-
-.footerbox {
-  color: white;
-  line-height: 38px;
-}
-
-
-.footerbox a {
-  text-decoration: none;
-  color: white;
-}
-
-.footerbox a:hover {
-  text-decoration: underline;
-}
-
-.Footerlogos {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.Footerlogos a {
-  text-decoration: none;
-}
-
-.footerheading00 {
-  animation: neon 1s ease-in-out infinite alternate, pulsate 1.5s ease-out infinite;
-  color: white;
-  font-weight: 800;
-  font-size: 25px;
-  margin-bottom: 15px;
-  letter-spacing: 2px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-}
-
-.footerheading {
-  color: white;
-  font-weight: 800;
-  font-size: 23px;
-  margin-bottom: 15px;
-  letter-spacing: 1.5px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-}
-
-.footercopyright {
-  margin-top: 20px;
-  font-weight: 700;
-  word-spacing: 1.5px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  color: white;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.FooterIcons{
-  width: 40px;
-  height: 40px;
-}
-
-.Iconsdiv{
-margin-top: 40px;
-}
-
-.Iconsdiv a{
-text-decoration: none;
-color: rgb(133, 133, 232);
-padding-left: 6px;
-padding-right: 6px;
-}
-
-
-@media screen and (max-width:1411px) {
-  .footergrid {
-    grid-gap: 20px;
-  }
-}
-
-
-@media screen and (max-width:1231px) {
-  .footergrid {
-    grid-gap: 50px;
-    grid-template-columns: auto auto auto;
-    padding-top: 20px;
-  }
-}
-
-@media screen and (max-width:868px) {
-  .footergrid {
-    grid-template-columns: auto auto;
-  }
-
-  .footerbox {
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .footerbackground{
-    padding-left: 15px;
+.fgriditem2{
+  flex: 1;
+  margin-top: 150px;
   padding-right: 15px;
-  }
-}
-
-@media screen and (max-width:538px) {
-  .footergrid {
-    display: block;
-  }
-
-  .Footerlogos {
-    text-align: center;
-  }
-
-  .footerbox1 {
-    padding-left: 0px;
-    margin: 0px;
-    text-align: center;
-  }
 }
 
 
-@media screen and (max-width:538px){
-  .footerbackground{
-    padding: 5px;
-  }
+.Fgridcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 15px;
 }
 
+.Fgriditem {
+  padding: 20px;
+  color: #453f3f;
+  text-align: center;
+}
 
-/*-------------------------         Footer   ------------------------------------------------- */
+.Fgriditem11{
+  margin-bottom: 20px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 19px;
+}
+
+.Fgriditem22{
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.Fgriditem22 a{
+   text-decoration: none;
+   color: #453f3f;
+}
+.iconsdiv{
+  margin-top: 30px;
+  text-align: center;
+}
+.iconsdiv a{
+  text-decoration: none;
+  color: #453f3f;
+  padding: 5px;
+}
+
+@media screen and (max-width:640px) {
+ .footergrid{
+   display: block;
+   text-align: center;
+   padding-top: 30px;
+ }
+ .Fgridcontainer{
+     display: block;
+ }
+ .fgriditem2{
+  margin-top: 70px;
+  padding-right: 0;
+ }
+}

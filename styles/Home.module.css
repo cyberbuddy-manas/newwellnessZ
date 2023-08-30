@@ -670,9 +670,17 @@
     .row2 {
         text-align: center;
     }
-
-
 }
+
+
+@media screen and (max-width:650px){
+    .lastImgage{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
 
 
 @media screen and (max-width:563px) {
@@ -764,6 +772,10 @@
 
     .column1 h1 {
         font-size: 30px;
+    }
+    .column4 h2 {
+        font-size: 30px;
+        padding: 10px;
     }
 }
 

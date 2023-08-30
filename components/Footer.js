@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import styles from "../styles/NavFooter.module.css"
+import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faInstagram, faGithub, faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
@@ -9,71 +9,54 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <>
+    <div className={styles.fbackground}>
+      <div className={styles.footercontainer}>
 
-      <footer className={styles.footerbackground} >
         <div className={styles.footergrid}>
 
-          <div className={styles.footerbox1} >
-            <div className={styles.footerheading00}>WellnessZ</div>
-            <div>Coding4U is a blog website where users can publish their articles related to programming or computer science field. It is designed to help individuals learn programming concepts, languages, and best practices. </div>
+          <div className={styles.fgriditem1}>
+            <Image src='/logo.png' width={150} height={150} />
+            <div className={styles.flogopara}>
+              <p>The Best Wellness Crm</p>
+              <p>For Wellness Coaches</p>
+            </div>
+          </div>
 
-            <div className={styles.Iconsdiv}>
 
+          <div className={styles.fgriditem2}>
+            <div className={styles.Fgridcontainer}>
+              <div className={styles.Fgriditem}>
+                <div className={styles.Fgriditem11}>Company</div>
+                <div className={styles.Fgriditem22}><a href='#'>About Us</a></div>
+              </div>
+
+              <div className={styles.Fgriditem}>
+                <div className={styles.Fgriditem11}>Legal</div>
+                <div className={styles.Fgriditem22}><a href='#'>Terms & Conditions</a></div>
+              </div>
+
+
+              <div className={styles.Fgriditem}>
+                <div className={styles.Fgriditem11}>Resources</div>
+                <div className={styles.Fgriditem22}><a href='#'>Blog</a></div>
+              </div>
+            </div>
+
+            <div className={styles.iconsdiv}>
               <a href="#">   <FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
               <a href="#">  <FontAwesomeIcon icon={faInstagram} size="2x" /></a>
               <a href="#">  <FontAwesomeIcon icon={faTwitter} size="2x" /></a>
               <a href="#">  <FontAwesomeIcon icon={faGithub} size="2x" /></a>
               <a href="#">  <FontAwesomeIcon icon={faFacebook} size="2x" /></a>
-
-
             </div>
-          </div>
 
 
-
-          <div className={styles.footerbox}>
-            <div className={styles.footerheading}>Company</div>
-            <ul>
-              <li> <Link href="#">About Us </Link>  </li>
-              <li> <Link href="#">Careers </Link>  </li>
-              <li> <Link href="#">Contact </Link>  </li>
-              <li> <Link href="#">Disclaimer </Link>  </li>
-            </ul>
-          </div>
-
-
-
-          <div className={styles.footerbox}>
-            <div className={styles.footerheading}>Legal</div>
-            <ul>
-              <li> <Link href="#">Return Policy </Link>  </li>
-              <li> <Link href="#">Privacy Policy </Link>  </li>
-              <li> <Link href="#">Terms & Conditions </Link>  </li>
-              <li> <Link href="#">Logistics </Link>  </li>
-            </ul>
-          </div>
-
-
-
-
-
-          <div className={styles.footerbox}>
-
-            <div className={styles.footerheading}>Resources</div>
-            <ul>
-              <li><Link href="#">Blog </Link></li>
-
-            </ul>
           </div>
 
         </div>
+      </div>
 
-
-        <div className={styles.footercopyright}>Copyright {currentYear} @ WellnessZ | All Rights Reserved | Made with ❤️</div>
-
-      </footer>
-    </>
+    </div>
 
   )
 }

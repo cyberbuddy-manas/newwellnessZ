@@ -235,7 +235,7 @@ const Homepage = () => {
 
           <div className={styles.lastgrid}>
             <div className={styles.lastgriditem1}>
-              <Image src="/iphone.png" height={450} width={600} />
+              <Image src="/iphone.png" height={450} width={600} className={styles.lastImgage}/>
             </div>
 
             <div className={styles.lastgriditem2}>
