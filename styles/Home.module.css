@@ -1,6 +1,5 @@
 .firstbackground {
     background-image: linear-gradient(to right top, #f5e4ed, #efe0ec, #e7dcec, #ded9eb, #d5d6e9, #cfd8ed, #c7daf1, #cfe0ed, #c6dee9, #caecf4, #b5edf0, #c0e3e0);
-
 }
 
 .row {
@@ -70,6 +69,8 @@
 
 .twoback {
     background-color: #7AC143;
+    padding-bottom: 80px;
+    padding-top: 50px;
 }
 
 .row2 {
@@ -87,6 +88,13 @@
 .column4 {
     flex: 40%;
 }
+
+.greenbag{
+    margin-top: -45px;
+    opacity: 0.8;
+}
+
+
 
 .column4 h2 {
     width: 70%;
@@ -149,7 +157,7 @@
 
 .PhoneIMG {
     height: 670px;
-    /* width: 880px; */
+    width: 863px;
 }
 
 .explorebtn {
@@ -435,7 +443,6 @@
 }
 
 .clientitem {
-    border: 1px solid #c72626;
     text-align: center;
     margin: 5px;
 }
@@ -449,7 +456,7 @@
 }
 .clientback{
     background-color: #1b1a1a;
-    /* border-radius: 10px; */
+    margin-top: -5px;
 }
 .clientback p{
     color: white;
@@ -740,6 +747,7 @@
         height: auto;
     }
 }
+
 
 
 @media screen and (max-width:509px) {

@@ -23,7 +23,7 @@ const Navbar = () => {
 
 
         <div className={styles.iconmenucontainer}>
-          <img className={styles.logo} src="/logo.png" alt="Logo" />
+        <Link href="/">  <img className={styles.logo} src="/logo.png" alt="Logo" /></Link>
           <div className={styles.menuicon} onClick={disablenavbar2}>☰</div>
         </div>
 

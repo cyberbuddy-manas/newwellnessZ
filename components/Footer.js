@@ -2,11 +2,12 @@ import styles from "../styles/NavFooter.module.css"
 import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faInstagram, faGithub, faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const Footer = () => {
 
 
-  const currentYear = new Date().getFullYear();
+  // const currentYear = new Date().getFullYear();
 
   return (
     <div className={styles.fbackground}>
@@ -15,7 +16,7 @@ const Footer = () => {
         <div className={styles.footergrid}>
 
           <div className={styles.fgriditem1}>
-            <Image src='/logo.png' width={150} height={150} />
+           <Link href="/"> <Image src='/logo.png' width={150} height={150} /></Link>
             <div className={styles.flogopara}>
               <p>The Best Wellness Crm</p>
               <p>For Wellness Coaches</p>

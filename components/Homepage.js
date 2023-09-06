@@ -24,7 +24,7 @@ const Homepage = () => {
             <br />
             <br />
 
-            <button><a href="#">Download Now</a></button>
+            <button><a href="#">Download Now </a></button>
 
           </div>
 
@@ -32,7 +32,6 @@ const Homepage = () => {
             <Image className={styles.mainImg} src="/phone.png" width={480} height={500} />
             <Image className={styles.screen1} src="/screen1.png" height={330} width={120} />
             <Image className={styles.screen2} src="/screen2.png" height={330} width={150} />
-
           </div>
 
         </div>
@@ -41,7 +40,7 @@ const Homepage = () => {
           <div className={styles.row2}>
 
             <div className={styles.column3}>
-              <Image src="/greenbag.png" width={600} height={400} />
+              <img src="/greenbag.png" className={styles.greenbag} width={600} height={400} />
             </div>
 
 
@@ -63,7 +62,7 @@ const Homepage = () => {
       </div>
 
 
-
+ 
       <div className={styles.back}>
         <div className={styles.gridcontainer}>
 
@@ -231,19 +230,19 @@ const Homepage = () => {
 
       <div className={styles.back5}>
         <div className={styles.givingmargin}>
-        <div className={styles.lastcontainer}>
+          <div className={styles.lastcontainer}>
 
-          <div className={styles.lastgrid}>
-            <div className={styles.lastgriditem1}>
-              <Image src="/iphone.png" height={450} width={600} className={styles.lastImgage}/>
-            </div>
+            <div className={styles.lastgrid}>
+              <div className={styles.lastgriditem1}>
+                <Image src="/iphone.png" height={450} width={600} className={styles.lastImgage} />
+              </div>
 
-            <div className={styles.lastgriditem2}>
-            <div className={styles.imgcontainer}>  <Image src="/logo.png" height={100} width={100} /></div>
-              <div className={styles.lastheading}>Get The Best Wellness CRM</div>
-              <p>The Best Wellness Crm for Wellness CRM</p>
+              <div className={styles.lastgriditem2}>
+                <div className={styles.imgcontainer}>  <Image src="/logo.png" height={100} width={100} /></div>
+                <div className={styles.lastheading}>Get The Best Wellness CRM</div>
+                <p>The Best Wellness Crm for Wellness CRM</p>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
