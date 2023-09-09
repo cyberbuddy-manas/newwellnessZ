@@ -75,7 +75,7 @@ const Blog = () => {
 
                             <div className={styles.lastgrid}>
                                 <div className={styles.lastgriditem1}>
-                                    <Image src="/iphone00.png" height={430} width={600} className={styles.lastImgage} />
+                                    <Image src="/iphone.png" height={430} width={600} className={styles.lastImgage} />
                                 </div>
 
                                 <div className={styles.lastgriditem2}>

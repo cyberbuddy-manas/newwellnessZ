@@ -80,7 +80,7 @@ const Contact = () => {
 
                             <div className={styles.lastgrid}>
                                 <div className={styles.lastgriditem1}>
-                                    <Image src="/iphone00.png" height={430} width={600} className={styles.lastImgage} alt="img"/>
+                                    <Image src="/iphone.png" height={430} width={600} className={styles.lastImgage} alt="img"/>
                                 </div>
 
                                 <div className={styles.lastgriditem2}>
