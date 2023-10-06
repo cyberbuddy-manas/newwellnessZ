@@ -4,7 +4,7 @@ import styles from "../styles/about.module.css"
 import Image from "next/image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faArrowsToDot, faArrowsToEye, faArrowCircleDown } from '@fortawesome/free-solid-svg-icons';
+import {  faArrowCircleDown } from '@fortawesome/free-solid-svg-icons';
 import { useState } from "react";
 
 const Blog = () => {
@@ -44,7 +44,7 @@ const Blog = () => {
 
 
                     <div className={styles.owner}>
-                        <Image className={styles.ownerImg} src="/simar.jpg" width={350} height={350} />
+                        <Image className={styles.ownerImg} src="/simar.jpg" width={400} height={400} />
                         <div className={styles.name}>
                             <div className={styles.ownername}>Simarpreet Singh</div>
 
@@ -70,7 +70,7 @@ const Blog = () => {
                     <div className={styles.gridparent}>
                         <div className={styles.grid}>
                             <div className={styles.card1}>
-                                <Image src="/tanveer.jpg" height={300} width={300} />
+                                <Image src="/tanveer.jpg" height={280} width={300} />
                                 <div className={styles.name}>
                                     <div className={styles.ownername}>Tanveer Kaur</div>
 
@@ -94,7 +94,7 @@ const Blog = () => {
 
 
                             <div className={styles.card1}>
-                                <Image src="/bhavishya.jpeg" height={300} width={300} />
+                                <Image src="/bhavishya.jpeg" height={280} width={300} />
                                 <div className={styles.name}>
                                     <div className={styles.ownername}>Bhavishya Mehra</div>
 
@@ -119,7 +119,7 @@ const Blog = () => {
 
 
                             <div className={styles.card1}>
-                                <Image src="/divyanshu.jpg" height={300} width={300} />
+                                <Image src="/divyanshu.jpg" height={280} width={300} />
                                 <div className={styles.name}>
                                     <div className={styles.ownername}>Divyanshu Rawat</div>
 
@@ -144,7 +144,7 @@ const Blog = () => {
 
 
                             <div className={styles.card1}>
-                                <Image src="/Sahibdeep.jpg" height={300} width={300} />
+                                <Image src="/Sahibdeep.jpg" height={280} width={300} />
                                 <div className={styles.name}>
                                     <div className={styles.ownername}>Sahibdeep Singh</div>
 
@@ -168,7 +168,7 @@ const Blog = () => {
 
 
                             <div className={styles.card1}>
-                                <Image src="/manas.jpg" height={300} width={400} />
+                                <Image src="/manas.jpg" height={280} width={400} />
                                 <div className={styles.name}>
                                     <div className={styles.ownername}>Manas Gupta</div>
 
@@ -193,7 +193,7 @@ const Blog = () => {
 
 
                             <div className={styles.card1}>
-                                <Image src="/Kanan.png" height={350} width={400} />
+                                <Image src="/Kanan.png" height={280} width={400} />
                                 <div className={styles.name}>
                                     <div className={styles.ownername}>Kanan Pathak</div>
 
