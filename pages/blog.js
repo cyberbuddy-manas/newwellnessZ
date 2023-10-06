@@ -75,13 +75,18 @@ const Blog = () => {
 
                             <div className={styles.lastgrid}>
                                 <div className={styles.lastgriditem1}>
-                                    <Image src="/iphone.png" height={430} width={600} className={styles.lastImgage} />
+                                    <Image src="/iphone.png" height={450} width={600} className={styles.lastImgage} />
                                 </div>
 
                                 <div className={styles.lastgriditem2}>
                                     <div className={styles.imgcontainer}>  <Image src="/logo.png" height={100} width={100} /></div>
                                     <div className={styles.lastheading}>Get The Best Wellness CRM</div>
                                     <p>The Best Wellness Crm for Wellness CRM</p>
+
+                                    <br /><br />
+                                    <button><a href="#"> Comming Soon </a></button>
+                                    <br /><br />
+
                                 </div>
                             </div>
                         </div>

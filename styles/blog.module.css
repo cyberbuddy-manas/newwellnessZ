@@ -1,5 +1,6 @@
 .firstbackground {
-    background-image: linear-gradient(to right top, #f5e4ed, #efe0ec, #e7dcec, #ded9eb, #d5d6e9, #cfd8ed, #c7daf1, #cfe0ed, #c6dee9, #caecf4, #b5edf0, #c0e3e0);
+    /* background-image: linear-gradient(to right top, #f5e4ed, #efe0ec, #e7dcec, #ded9eb, #d5d6e9, #cfd8ed, #c7daf1, #cfe0ed, #c6dee9, #caecf4, #b5edf0, #c0e3e0); */
+    background-color: #C1D6B1;
 }
 
 .top{
@@ -12,17 +13,17 @@
     right: 270px;
     margin-top: 68px;
     margin-right: 44px;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 .screen2 {
     position: absolute;
     right: 56px;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 .mainImg{
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 .screen1 {
@@ -30,17 +31,17 @@
     right: 270px;
     margin-top: 68px;
     margin-right: 44px;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 .screen2 {
     position: absolute;
     right: 56px;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 .mainImg{
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 
@@ -97,6 +98,7 @@
 .card1{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
+    background-color: white;
 }
 
 .card1 img{
@@ -192,7 +194,24 @@
 }
 
 
+.lastgriditem2 button{
+    width: 350px;
+    height: 65px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #7AC143;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
 
+.lastgriditem2 button a  {
+    text-decoration: none;
+    color: white;
+}
 
 
 
@@ -226,6 +245,11 @@
 
 
 @media screen and (max-width:509px) {
+
+    .lastgriditem2 button {
+        max-width: 245px;
+        height: 60px;
+    }
     .mainImg {
         width: 280px;
         height: auto;
@@ -253,7 +277,7 @@
 
 /* --------------------------------------- */
 
-@media screen and (max-width:905px){
+@media screen and (max-width:1031px){
     .lastgrid{
      display: block;
      padding: 0;

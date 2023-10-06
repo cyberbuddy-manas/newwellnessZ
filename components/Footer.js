@@ -28,18 +28,18 @@ const Footer = () => {
             <div className={styles.Fgridcontainer}>
               <div className={styles.Fgriditem}>
                 <div className={styles.Fgriditem11}>Company</div>
-                <div className={styles.Fgriditem22}><a href='#'>About Us</a></div>
+                <div className={styles.Fgriditem22}><Link href='/about'>About Us</Link></div>
               </div>
 
               <div className={styles.Fgriditem}>
                 <div className={styles.Fgriditem11}>Legal</div>
-                <div className={styles.Fgriditem22}><a href='#'>Terms & Conditions</a></div>
+                <div className={styles.Fgriditem22}><Link href='#'>Terms & Conditions</Link></div>
               </div>
 
 
               <div className={styles.Fgriditem}>
                 <div className={styles.Fgriditem11}>Resources</div>
-                <div className={styles.Fgriditem22}><a href='#'>Blog</a></div>
+                <div className={styles.Fgriditem22}><Link href='/blog'>Blog</Link></div>
               </div>
             </div>
 
