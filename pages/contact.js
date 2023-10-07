@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import styles from "../styles/contact.module.css"
 import Image from "next/image"
-import Link from "next/link"
 
 const Contact = () => {
     return (
@@ -59,7 +58,7 @@ const Contact = () => {
                 <div className={styles.secondflex}>
 
                     <div className={styles.column1}>
-                        <img src="/Amritsar.png" height={202} width={250} />
+                        <img src="/Amritsar.png" height={202} width={250} loading="lazy"/>
                         <div className={styles.Asr}>Amritsar</div>
                         <div className={styles.para}>Got a question about the Busineswise app or wish to reach out to us for anything else?</div>
                     </div>
@@ -81,11 +80,11 @@ const Contact = () => {
 
             <div className={styles.lastgrid}>
               <div className={styles.lastgriditem1}>
-                <Image src="/iphone.png" height={450} width={600} className={styles.lastImgage} />
+                <Image src="/iphone.png" height={450} width={600} className={styles.lastImgage} loading="lazy"/>
               </div>
 
               <div className={styles.lastgriditem2}>
-                <div className={styles.imgcontainer}>  <Image src="/logo.png" height={100} width={100} /></div>
+                <div className={styles.imgcontainer}>  <Image src="/logo.png" height={100} width={100} loading="lazy"/></div>
                 <div className={styles.lastheading}>Get The Best Wellness CRM</div>
                 <p>The Best Wellness Crm for Wellness CRM</p>
 

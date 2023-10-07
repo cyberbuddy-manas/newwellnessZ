@@ -82,7 +82,7 @@ const Homepage = () => {
           <div className={styles.row2}>
 
             <div className={styles.column3} >
-              <motion.img src="/greenbag.png" className={styles.greenbag} width={600} height={400} ref={ref3} initial="hidden" animate={inView3 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} />
+              <motion.img src="/greenbag.png" className={styles.greenbag} width={600} height={400} ref={ref3} initial="hidden" animate={inView3 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
             </div>
 
 
@@ -108,11 +108,11 @@ const Homepage = () => {
       <div className={styles.back}>
         <div className={styles.gridcontainer}>
 
-          <motion.div className={styles.griditem} ref={ref5} initial="hidden" animate={inView5 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}><Image src="/Air Balloon 6.png" height={200} width={200} /></motion.div>
+          <motion.div className={styles.griditem} ref={ref5} initial="hidden" animate={inView5 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}><Image src="/Air Balloon 6.png" height={200} width={200} loading="lazy"/></motion.div>
 
 
           <div className={styles.griditem2}>
-            <motion.img className={styles.PhoneIMG} src="/3.webp" ref={ref6} initial="hidden" animate={inView6 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} />
+            <motion.img className={styles.PhoneIMG} src="/3.webp" ref={ref6} initial="hidden" animate={inView6 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
           </div>
 
 
@@ -130,7 +130,7 @@ const Homepage = () => {
 
           <div className={styles.rowitem1}>
 
-              <motion.img className={styles.circphone} src="/0.webp" ref={ref9} initial="hidden" animate={inView9 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} />
+              <motion.img className={styles.circphone} src="/0.webp" ref={ref9} initial="hidden" animate={inView9 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
 
 
           </div>
@@ -139,7 +139,7 @@ const Homepage = () => {
           <div className={styles.rowitem2}>
 
             <div className={styles.paisa}>
-              <motion.img src="/paisa.png" height={140} width={180} ref={ref10} initial="hidden" animate={inView10 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} />
+              <motion.img src="/paisa.png" height={140} width={180} ref={ref10} initial="hidden" animate={inView10 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
             </div>
 
 
@@ -173,7 +173,7 @@ const Homepage = () => {
         <div className={styles.rowcontainer2}>
 
           <div className={styles.bucket}>
-            <motion.img src="/bucket.png" height={190} width={191} ref={ref14} initial="hidden" animate={inView14 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} />
+            <motion.img src="/bucket.png" height={190} width={191} ref={ref14} initial="hidden" animate={inView14 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
           </div>
 
 
@@ -195,7 +195,7 @@ const Homepage = () => {
           </div>
 
           <div className={styles.rowitem22}>
-            <motion.img className={styles.circphone2} src="/1.webp" ref={ref16} initial="hidden" animate={inView16 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} />
+            <motion.img className={styles.circphone2} src="/1.webp" ref={ref16} initial="hidden" animate={inView16 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
           </div>
         </div>
         <br /><br />
@@ -225,20 +225,20 @@ const Homepage = () => {
           </motion.div>
 
 
-        <motion.div ref={ref21} initial="hidden" animate={inView21 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>  <Image src="/mylogo.png" className={styles.circlelogo} height={80} width={80} /></motion.div>
+        <motion.div ref={ref21} initial="hidden" animate={inView21 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>  <Image src="/mylogo.png" className={styles.circlelogo} height={80} width={80} loading="lazy"/></motion.div>
         </div>
 
         <div className={styles.circlegridcontainer}>
 
           <div className={styles.circlegriditem1}>
             <motion.div className={styles.iconcontainer} ref={ref20} initial="hidden" animate={inView20 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>
-              <Image src="/11.png" width={60} height={60} className={styles.circleimages} />
+              <Image src="/11.png" width={60} height={60} className={styles.circleimages} loading="lazy"/>
               <p className={styles.cirpara}>Wellness</p></motion.div>
           </div>
 
           <div className={styles.circlegriditem2}>
             <motion.div className={styles.iconcontainer} ref={ref20} initial="hidden" animate={inView20 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>
-              <Image src="/14.png" width={60} height={60} className={styles.circleimages} />
+              <Image src="/14.png" width={60} height={60} className={styles.circleimages} loading="lazy"/>
               <p className={styles.cirpara}>Connection</p></motion.div>
           </div>
 
@@ -246,14 +246,14 @@ const Homepage = () => {
 
           <div className={styles.circlegriditem3}>
             <motion.div className={styles.iconcontainer} ref={ref22} initial="hidden" animate={inView22 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>
-              <Image src="/12.jpg" width={60} height={60} className={styles.circleimages} />
+              <Image src="/12.jpg" width={60} height={60} className={styles.circleimages} loading="lazy"/>
               <p className={styles.cirpara}>Retail</p></motion.div>
           </div>
 
 
           <div className={styles.circlegriditem4}>
             <motion.div className={styles.iconcontainer} ref={ref22} initial="hidden" animate={inView22 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>
-              <Image src="/13.png" width={60} height={60} className={styles.circleimages} />
+              <Image src="/13.png" width={60} height={60} className={styles.circleimages} loading="lazy"/>
               <p className={styles.cirpara}>Management</p></motion.div>
           </div>
 
@@ -312,11 +312,11 @@ const Homepage = () => {
 
             <div className={styles.lastgrid}>
               <div className={styles.lastgriditem1}>
-              <motion.div ref={ref23} initial="hidden" animate={inView23 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}> <Image src="/iphone.png" height={450} width={600} className={styles.lastImgage} /></motion.div> 
+              <motion.div ref={ref23} initial="hidden" animate={inView23 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}> <Image src="/iphone.png" height={450} width={600} className={styles.lastImgage} loading="lazy"/></motion.div> 
               </div>
 
               <div className={styles.lastgriditem2}>
-                <motion.div className={styles.imgcontainer} ref={ref24} initial="hidden" animate={inView24 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} >  <Image src="/logo.png" height={100} width={100} /></motion.div>
+                <motion.div className={styles.imgcontainer} ref={ref24} initial="hidden" animate={inView24 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} >  <Image src="/logo.png" height={100} width={100} loading="lazy"/></motion.div>
                 <div className={styles.lastheading}>Get The Best Wellness CRM</div>
                 <p>The Best Wellness Crm for Wellness CRM</p>
 
