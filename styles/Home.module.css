@@ -162,10 +162,9 @@
 }
 
 
-
 .PhoneIMG {
     height: 670px;
-    width: 863px;
+    width: 800px;
 }
 
 .explorebtn {
@@ -214,6 +213,7 @@
 
 .rowitem1 {
     width: 45%;
+    
 }
 
 .rowitem2 {
@@ -254,15 +254,15 @@
 }
 
 .circphone {
-    height: 650px;
-    width: 420px;
+    height: 720px;
+    width: 470px;
     margin-left: 50px;
     margin-top: -280px;
 }
 
 .circphone2 {
-    height: 680px;
-    width: 410px;
+    height: 730px;
+    width: 500px;
     margin-left: 50px;
     margin-top: -280px;
 }
@@ -871,7 +871,7 @@
 }
 
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:520px) {
 
     .circphone,
     .circphone2 {

@@ -127,9 +127,15 @@ const Homepage = () => {
 
       <div className={styles.back2}>
         <div className={styles.rowcontainer}>
+
           <div className={styles.rowitem1}>
-            <motion.img className={styles.circphone} src="/cricphone0.png" ref={ref9} initial="hidden" animate={inView9 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} />
+
+              <motion.img className={styles.circphone} src="/cricphone000.png" ref={ref9} initial="hidden" animate={inView9 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} />
+
+
           </div>
+
+
           <div className={styles.rowitem2}>
 
             <div className={styles.paisa}>
