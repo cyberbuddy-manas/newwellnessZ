@@ -112,7 +112,7 @@ const Homepage = () => {
 
 
           <div className={styles.griditem2}>
-            <motion.img className={styles.PhoneIMG} src="/phone000.png" ref={ref6} initial="hidden" animate={inView6 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} />
+            <motion.img className={styles.PhoneIMG} src="/3.webp" ref={ref6} initial="hidden" animate={inView6 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} />
           </div>
 
 
@@ -130,7 +130,7 @@ const Homepage = () => {
 
           <div className={styles.rowitem1}>
 
-              <motion.img className={styles.circphone} src="/cricphone000.png" ref={ref9} initial="hidden" animate={inView9 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} />
+              <motion.img className={styles.circphone} src="/0.webp" ref={ref9} initial="hidden" animate={inView9 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} />
 
 
           </div>
@@ -195,7 +195,7 @@ const Homepage = () => {
           </div>
 
           <div className={styles.rowitem22}>
-            <motion.img className={styles.circphone2} src="/circlephone2.png" ref={ref16} initial="hidden" animate={inView16 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} />
+            <motion.img className={styles.circphone2} src="/1.webp" ref={ref16} initial="hidden" animate={inView16 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} />
           </div>
         </div>
         <br /><br />
