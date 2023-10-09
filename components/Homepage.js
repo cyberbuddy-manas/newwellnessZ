@@ -3,17 +3,44 @@ import Image from "next/image";
 import Navbar from "./Navbar";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-
+import Head from "next/head";
 
 const Homepage = () => {
 
-  const TransitionDuration = 0.6;
+
+  <Head>
+    <title>WellnessZ: Your Complete Solution for Wellness Coaches</title>
+    <meta name="description" content="WellnessZ is a B2B healthtech platform, your all-in-one solution for nutritionists, gym owners, wellness coaches, hospitals, and more in the health industry. From online presence to CRM, lead generation, and marketing, we've got you covered. Empower your wellness coaching business and brand with us today." />
+
+  </Head>
+
+
+  const TransitionDuration = 0.7;
+  // const TransitionDuration2 = 0.9;
 
   const [ref1, inView1] = useInView({ rootMargin: '0px 0px -50px 0px' });
   const [ref2, inView2] = useInView({ rootMargin: '0px 0px -100px 0px' });
   const [ref3, inView3] = useInView({ rootMargin: '0px 0px -100px -50px' });
   const [ref4, inView4] = useInView({ rootMargin: '0px 0px -100px 0px' });
   const [ref5, inView5] = useInView({ rootMargin: '0px 0px -600px 0px' });
+
+
+  // const [ref5, inView5] = useInView({ rootMargin: '0px 0px -200px 0px' });
+
+
+  /*
+  const variants0 = {
+    visible: { opacity: 1, x: 0, y: 0 },
+    hidden: { opacity: 0, x: '500%', y: '100%' },
+  };
+*/
+
+
+
+
+
+
+
   const [ref6, inView6] = useInView({ rootMargin: '0px 0px -100px 0px' });
   const [ref7, inView7] = useInView({ rootMargin: '0px 0px -100px 0px' });
   const [ref8, inView8] = useInView({ rootMargin: '0px 0px -100px 0px' });
@@ -53,8 +80,7 @@ const Homepage = () => {
 
           <div className={styles.column1}>
             <motion.h1 initial={{ opacity: 0.1 }} animate={{ opacity: 1 }} transition={{ duration: 0.99 }}>Wonderful<span>.</span> Workout<span>.</span> Wellbeing</motion.h1>
-            <br />
-            <br />
+            
             <p>World’s No. 1 B2B Health Aggregators & Fitness Customer Relationship Support</p>
             <br />
             <br />
@@ -82,7 +108,7 @@ const Homepage = () => {
           <div className={styles.row2}>
 
             <div className={styles.column3} >
-              <motion.img src="/greenbag.webp" className={styles.greenbag} width={600} height={400} ref={ref3} initial="hidden" animate={inView3 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
+              <motion.img src="/greenbag.webp" className={styles.greenbag} width={600} height={400} ref={ref3} initial="hidden" animate={inView3 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy" />
             </div>
 
 
@@ -108,11 +134,23 @@ const Homepage = () => {
       <div className={styles.back}>
         <div className={styles.gridcontainer}>
 
-          <motion.div className={styles.griditem} ref={ref5} initial="hidden" animate={inView5 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}><Image src="/Air Balloon 6.png" height={200} width={200} loading="lazy"/></motion.div>
+          <motion.div className={styles.griditem} ref={ref5} initial="hidden" animate={inView5 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}><Image src="/Air Balloon 6.png" height={200} width={200} loading="lazy" /></motion.div>
+
+
+          {/* <motion.div
+      className={styles.griditem}
+      ref={ref5}
+      initial="hidden"
+      animate={inView5 ? 'visible' : 'hidden'}
+      variants={variants0}
+      transition={{ duration: TransitionDuration2 }}
+    >
+      <Image src="/Air Balloon 6.png" height={200} width={200} loading="lazy" />
+    </motion.div> */}
 
 
           <div className={styles.griditem2}>
-            <motion.img className={styles.PhoneIMG} src="/3.webp" ref={ref6} initial="hidden" animate={inView6 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
+            <motion.img className={styles.PhoneIMG} src="/3.webp" ref={ref6} initial="hidden" animate={inView6 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy" />
           </div>
 
 
@@ -130,7 +168,7 @@ const Homepage = () => {
 
           <div className={styles.rowitem1}>
 
-              <motion.img className={styles.circphone} src="/0.webp" ref={ref9} initial="hidden" animate={inView9 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
+            <motion.img className={styles.circphone} src="/0.webp" ref={ref9} initial="hidden" animate={inView9 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy" />
 
 
           </div>
@@ -139,7 +177,7 @@ const Homepage = () => {
           <div className={styles.rowitem2}>
 
             <div className={styles.paisa}>
-              <motion.img src="/paisa.webp" height={140} width={180} ref={ref10} initial="hidden" animate={inView10 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
+              <motion.img src="/paisa.webp" height={140} width={180} ref={ref10} initial="hidden" animate={inView10 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy" />
             </div>
 
 
@@ -152,20 +190,20 @@ const Homepage = () => {
               <p>Allow WellnessZ to help you save time so that you can</p>
               <p>Attract More Clients</p>
             </motion.div>
-          </div> 
+          </div>
         </div>
         <br /><br />
       </div>
 
 
-<div className={styles.pointsparent}>
-      <motion.div className={styles.points} ref={ref13} initial="hidden" animate={inView13 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>
-        
-        <div className={styles.box}><p>Record Daily Order</p></div>
-        <div className={styles.box}><p>Manage Your Clients</p></div>
-        <div className={styles.box}><p>Create Custom Kits</p></div>
-        <div className={styles.box}><p>Create and Share Meal Plans</p> </div>
-      </motion.div>
+      <div className={styles.pointsparent}>
+        <motion.div className={styles.points} ref={ref13} initial="hidden" animate={inView13 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>
+
+          <div className={styles.box}><p>Record Daily Order</p></div>
+          <div className={styles.box}><p>Manage Your Clients</p></div>
+          <div className={styles.box}><p>Create Custom Kits</p></div>
+          <div className={styles.box}><p>Create and Share Meal Plans</p> </div>
+        </motion.div>
       </div>
 
 
@@ -173,7 +211,7 @@ const Homepage = () => {
         <div className={styles.rowcontainer2}>
 
           <div className={styles.bucket}>
-            <motion.img src="/bucket.png" height={190} width={191} ref={ref14} initial="hidden" animate={inView14 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
+            <motion.img src="/bucket.png" height={190} width={191} ref={ref14} initial="hidden" animate={inView14 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy" />
           </div>
 
 
@@ -195,7 +233,7 @@ const Homepage = () => {
           </div>
 
           <div className={styles.rowitem22}>
-            <motion.img className={styles.circphone2} src="/1.webp" ref={ref16} initial="hidden" animate={inView16 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
+            <motion.img className={styles.circphone2} src="/1.webp" ref={ref16} initial="hidden" animate={inView16 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy" />
           </div>
         </div>
         <br /><br />
@@ -203,13 +241,13 @@ const Homepage = () => {
 
 
       <div className={styles.pointsparent}>
-      <motion.div className={styles.points} ref={ref17} initial="hidden" animate={inView17 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>
-        <div className={styles.box2}><p>Manage Your Earnings</p></div>
-        <div className={styles.box2}><p>Engage With Community</p></div>
-        <div className={styles.box2}><p>Get Progress Analytics</p></div>
-        {/* <div className={styles.box2}><p>Wellneess Z Team</p> </div> */}
+        <motion.div className={styles.points} ref={ref17} initial="hidden" animate={inView17 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>
+          <div className={styles.box2}><p>Manage Your Earnings</p></div>
+          <div className={styles.box2}><p>Engage With Community</p></div>
+          <div className={styles.box2}><p>Get Progress Analytics</p></div>
+          {/* <div className={styles.box2}><p>Wellneess Z Team</p> </div> */}
 
-      </motion.div>
+        </motion.div>
       </div>
 
 
@@ -225,20 +263,20 @@ const Homepage = () => {
           </motion.div>
 
 
-        <motion.div ref={ref21} initial="hidden" animate={inView21 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>  <Image src="/mylogo.png" className={styles.circlelogo} height={80} width={80} loading="lazy"/></motion.div>
+          <motion.div ref={ref21} initial="hidden" animate={inView21 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>  <Image src="/mylogo.png" className={styles.circlelogo} height={80} width={80} loading="lazy" /></motion.div>
         </div>
 
         <div className={styles.circlegridcontainer}>
 
           <div className={styles.circlegriditem1}>
             <motion.div className={styles.iconcontainer} ref={ref20} initial="hidden" animate={inView20 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>
-              <Image src="/11.png" width={60} height={60} className={styles.circleimages} loading="lazy"/>
+              <Image src="/11.png" width={60} height={60} className={styles.circleimages} loading="lazy" />
               <p className={styles.cirpara}>Wellness</p></motion.div>
           </div>
 
           <div className={styles.circlegriditem2}>
             <motion.div className={styles.iconcontainer} ref={ref20} initial="hidden" animate={inView20 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>
-              <Image src="/14.png" width={60} height={60} className={styles.circleimages} loading="lazy"/>
+              <Image src="/14.png" width={60} height={60} className={styles.circleimages} loading="lazy" />
               <p className={styles.cirpara}>Connection</p></motion.div>
           </div>
 
@@ -246,14 +284,14 @@ const Homepage = () => {
 
           <div className={styles.circlegriditem3}>
             <motion.div className={styles.iconcontainer} ref={ref22} initial="hidden" animate={inView22 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>
-              <Image src="/12.jpg" width={60} height={60} className={styles.circleimages} loading="lazy"/>
+              <Image src="/12.jpg" width={60} height={60} className={styles.circleimages} loading="lazy" />
               <p className={styles.cirpara}>Retail</p></motion.div>
           </div>
 
 
           <div className={styles.circlegriditem4}>
             <motion.div className={styles.iconcontainer} ref={ref22} initial="hidden" animate={inView22 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>
-              <Image src="/13.png" width={60} height={60} className={styles.circleimages} loading="lazy"/>
+              <Image src="/13.png" width={60} height={60} className={styles.circleimages} loading="lazy" />
               <p className={styles.cirpara}>Management</p></motion.div>
           </div>
 
@@ -312,11 +350,11 @@ const Homepage = () => {
 
             <div className={styles.lastgrid}>
               <div className={styles.lastgriditem1}>
-              <motion.div ref={ref23} initial="hidden" animate={inView23 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}> <Image src="/iphone.png" height={450} width={600} className={styles.lastImgage} loading="lazy"/></motion.div> 
+                <motion.div ref={ref23} initial="hidden" animate={inView23 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}> <Image src="/iphone.png" height={450} width={600} className={styles.lastImgage} loading="lazy" /></motion.div>
               </div>
 
               <div className={styles.lastgriditem2}>
-                <motion.div className={styles.imgcontainer} ref={ref24} initial="hidden" animate={inView24 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} >  <Image src="/logo.png" height={100} width={100} loading="lazy"/></motion.div>
+                <motion.div className={styles.imgcontainer} ref={ref24} initial="hidden" animate={inView24 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} >  <Image src="/logo.png" height={100} width={100} loading="lazy" /></motion.div>
                 <div className={styles.lastheading}>Get The Best Wellness CRM</div>
                 <p>The Best Wellness Crm for Wellness CRM</p>
 

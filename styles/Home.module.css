@@ -36,6 +36,7 @@
     font-weight: 600;
     width: 47%;
     line-height: 1.5;
+    margin-top: 35px;
 }
 
 .column1 button,
@@ -646,7 +647,7 @@
 }
 
 
-@media screen and (max-width:865px) {
+@media screen and (max-width:944px) {
 
     .paisa {
         display: block;
@@ -746,10 +747,11 @@
         height: 950px;
     }
 
-    .column1 {
+    .column1, .column1 p {
         text-align: center;
         padding: 5px;
         margin-top: 40px;
+        width: 98%;
     }
 
     .column2 {
