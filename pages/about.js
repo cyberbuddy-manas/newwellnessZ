@@ -132,7 +132,7 @@ const Blog = () => {
                             <div className={styles.card1}>
                                 <Image src="/arjun.jpeg" height={280} width={300} />
                                 <div className={styles.name}>
-                                    <div className={styles.ownername}>Bhavishya Mehra</div>
+                                    <div className={styles.ownername}>Arjun Kumar</div>
 
                                     <button className={styles.biobutton} onClick={() => handleButtonClick(7)}>
                                         {activeButton === 7 ? 'Hide bio' : 'Show bio'}&nbsp; <FontAwesomeIcon icon={faArrowCircleDown} />
