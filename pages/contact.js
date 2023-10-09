@@ -10,9 +10,9 @@ const Contact = () => {
                 <Navbar />
 
                 <div className={styles.top}>
-                    <Image className={styles.mainImg} src="/phone.png" width={480} height={500} alt="img"/>
-                    <Image className={styles.screen1} src="/screen1.png" height={330} width={120} alt="img"/>
-                    <Image className={styles.screen2} src="/screen2.png" height={330} width={150} alt="img"/>
+                    <Image className={styles.mainImg} src="/phone.webp" width={480} height={500} alt="img"/>
+                    <Image className={styles.screen1} src="/screen1.webp" height={330} width={120} alt="img"/>
+                    <Image className={styles.screen2} src="/screen2.webp" height={330} width={150} alt="img"/>
                 </div>
 
                 <div className={styles.blog}>
@@ -65,7 +65,7 @@ const Contact = () => {
 
 
                     <div>
-                        <img src="/map.jpg" className={styles.map} width={800} height={242}/>
+                        <img src="/map.webp" className={styles.map} width={800} height={242}/>
                     </div>
 
                 </div>

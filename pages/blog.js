@@ -11,9 +11,9 @@ const Blog = () => {
                 <Navbar />
 
                 <div className={styles.top}>
-                    <Image className={styles.mainImg} src="/phone.png" width={480} height={500} />
-                    <Image className={styles.screen1} src="/screen1.png" height={330} width={120} />
-                    <Image className={styles.screen2} src="/screen2.png" height={330} width={150} />
+                    <Image className={styles.mainImg} src="/phone.webp" width={480} height={500} />
+                    <Image className={styles.screen1} src="/screen1.webp" height={330} width={120} />
+                    <Image className={styles.screen2} src="/screen2.webp" height={330} width={150} />
                 </div>
 
                 <div className={styles.blog}>

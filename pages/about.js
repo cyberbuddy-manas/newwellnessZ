@@ -23,9 +23,9 @@ const Blog = () => {
                 <Navbar />
 
                 <div className={styles.top}>
-                    <Image className={styles.mainImg} src="/phone.png" width={480} height={500} />
-                    <Image className={styles.screen1} src="/screen1.png" height={330} width={120} />
-                    <Image className={styles.screen2} src="/screen2.png" height={330} width={150} />
+                    <Image className={styles.mainImg} src="/phone.webp" width={480} height={500} />
+                    <Image className={styles.screen1} src="/screen1.webp" height={330} width={120} />
+                    <Image className={styles.screen2} src="/screen2.webp" height={330} width={150} />
                 </div>
 
                 <div className={styles.blog}>
@@ -69,18 +69,21 @@ const Blog = () => {
 
                     <div className={styles.gridparent}>
                         <div className={styles.grid}>
-                            <div className={styles.card1}>
-                                <Image src="/tanveer.jpg" height={280} width={300} />
-                                <div className={styles.name}>
-                                    <div className={styles.ownername}>Tanveer Kaur</div>
 
-                                    <button className={styles.biobutton} onClick={() => handleButtonClick(2)}>
-                                        {activeButton === 2 ? 'Hide bio' : 'Show bio'}&nbsp; <FontAwesomeIcon icon={faArrowCircleDown} />
+
+
+                        <div className={styles.card1}>
+                                <Image src="/Kanan.png" height={280} width={400} />
+                                <div className={styles.name}>
+                                    <div className={styles.ownername}>Kanan Pathak</div>
+
+                                    <button className={styles.biobutton} onClick={() => handleButtonClick(7)}>
+                                        {activeButton === 7 ? 'Hide bio' : 'Show bio'}&nbsp; <FontAwesomeIcon icon={faArrowCircleDown} />
                                     </button>
 
-                                    <div hidden={activeButton !== 2}>
-                                        <p>UI/UX designer for WellnessZ App, using design principles and Figma to create user-friendly client interfaces that align with our brand identity. My role involves wireframing, prototyping, and applying design elements for a cohesive and engaging user experience, leveraging typography, color theory and interaction designs.
-                                        </p>
+                                    <div hidden={activeButton !== 7}>
+                                        <p >As the Chief Operating Officer (COO), my role includes comprehensive oversight of our company's operations. This includes managing critical areas such as social media, where I strategize and execute campaigns for brand engagement. I foster strong client relations, ensuring satisfaction and loyalty through exceptional service. In the realm of marketing, I lead initiatives, making innovative strategies to promote our products and services effectively. Additionally, I am hands-on in content creation. Through my leadership, guidance, and unwavering support, I ensure we consistently meet and exceed our objectives, ultimately positioning us as industry leaders.</p>
+
                                         <div className={styles.icons}>
                                             <a href="#">   <FontAwesomeIcon className={styles.linkedin} icon={faLinkedin} size="2x" /></a>
                                             <a href="#">  <FontAwesomeIcon className={styles.instagram} icon={faInstagram} size="2x" /></a>
@@ -89,6 +92,13 @@ const Blog = () => {
                                     </div>
                                 </div>
                             </div>
+
+
+
+
+
+
+                           
 
 
 
@@ -118,6 +128,35 @@ const Blog = () => {
 
 
 
+
+                            <div className={styles.card1}>
+                                <Image src="/arjun.jpeg" height={280} width={300} />
+                                <div className={styles.name}>
+                                    <div className={styles.ownername}>Bhavishya Mehra</div>
+
+                                    <button className={styles.biobutton} onClick={() => handleButtonClick(7)}>
+                                        {activeButton === 7 ? 'Hide bio' : 'Show bio'}&nbsp; <FontAwesomeIcon icon={faArrowCircleDown} />
+                                    </button>
+
+
+                                    <div hidden={activeButton !== 7}>
+                                        <p>As a nutritionist with five years of experience and an active World Team member at Herbalife, I'm passionate about promoting wellness. I'm also a co-founder of Wellnessz, a holistic health venture committed to empowering individuals to achieve their health and fitness aspirations</p>
+
+                                        <div className={styles.icons}>
+                                            <a href="#">   <FontAwesomeIcon className={styles.linkedin} icon={faLinkedin} size="2x" /></a>
+                                            <a href="#">  <FontAwesomeIcon className={styles.instagram} icon={faInstagram} size="2x" /></a>
+                                            <a href="#">  <FontAwesomeIcon className={styles.github} icon={faGithub} size="2x" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
                             <div className={styles.card1}>
                                 <Image src="/divyanshu.jpg" height={280} width={300} />
                                 <div className={styles.name}>
@@ -138,6 +177,31 @@ const Blog = () => {
                                 </div>
                             </div>
 
+
+
+
+
+
+                            <div className={styles.card1}>
+                                <Image src="/tanveer.jpg" height={280} width={300} />
+                                <div className={styles.name}>
+                                    <div className={styles.ownername}>Tanveer Kaur</div>
+
+                                    <button className={styles.biobutton} onClick={() => handleButtonClick(2)}>
+                                        {activeButton === 2 ? 'Hide bio' : 'Show bio'}&nbsp; <FontAwesomeIcon icon={faArrowCircleDown} />
+                                    </button>
+
+                                    <div hidden={activeButton !== 2}>
+                                        <p>UI/UX designer for WellnessZ App, using design principles and Figma to create user-friendly client interfaces that align with our brand identity. My role involves wireframing, prototyping, and applying design elements for a cohesive and engaging user experience, leveraging typography, color theory and interaction designs.
+                                        </p>
+                                        <div className={styles.icons}>
+                                            <a href="#">   <FontAwesomeIcon className={styles.linkedin} icon={faLinkedin} size="2x" /></a>
+                                            <a href="#">  <FontAwesomeIcon className={styles.instagram} icon={faInstagram} size="2x" /></a>
+                                            <a href="#">  <FontAwesomeIcon className={styles.github} icon={faGithub} size="2x" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
 
@@ -192,26 +256,7 @@ const Blog = () => {
 
 
 
-                            <div className={styles.card1}>
-                                <Image src="/Kanan.png" height={280} width={400} />
-                                <div className={styles.name}>
-                                    <div className={styles.ownername}>Kanan Pathak</div>
-
-                                    <button className={styles.biobutton} onClick={() => handleButtonClick(7)}>
-                                        {activeButton === 7 ? 'Hide bio' : 'Show bio'}&nbsp; <FontAwesomeIcon icon={faArrowCircleDown} />
-                                    </button>
-
-                                    <div hidden={activeButton !== 7}>
-                                        <p >As the Chief Operating Officer (COO), my role includes comprehensive oversight of our company's operations. This includes managing critical areas such as social media, where I strategize and execute campaigns for brand engagement. I foster strong client relations, ensuring satisfaction and loyalty through exceptional service. In the realm of marketing, I lead initiatives, making innovative strategies to promote our products and services effectively. Additionally, I am hands-on in content creation. Through my leadership, guidance, and unwavering support, I ensure we consistently meet and exceed our objectives, ultimately positioning us as industry leaders.</p>
-
-                                        <div className={styles.icons}>
-                                            <a href="#">   <FontAwesomeIcon className={styles.linkedin} icon={faLinkedin} size="2x" /></a>
-                                            <a href="#">  <FontAwesomeIcon className={styles.instagram} icon={faInstagram} size="2x" /></a>
-                                            <a href="#">  <FontAwesomeIcon className={styles.github} icon={faGithub} size="2x" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                           
 
 
 

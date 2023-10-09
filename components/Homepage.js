@@ -9,7 +9,7 @@ const Homepage = () => {
 
   const TransitionDuration = 0.6;
 
-  const [ref1, inView1] = useInView({ rootMargin: '0px 0px -100px 0px' });
+  const [ref1, inView1] = useInView({ rootMargin: '0px 0px -50px 0px' });
   const [ref2, inView2] = useInView({ rootMargin: '0px 0px -100px 0px' });
   const [ref3, inView3] = useInView({ rootMargin: '0px 0px -100px -50px' });
   const [ref4, inView4] = useInView({ rootMargin: '0px 0px -100px 0px' });
@@ -52,12 +52,12 @@ const Homepage = () => {
         <div className={styles.row}>
 
           <div className={styles.column1}>
-            <motion.h1 initial={{ opacity: 0.1 }} animate={{ opacity: 1 }} transition={{ duration: 0.99 }}>Helping Wellness Coaches In Making The World Healthier and Happier!</motion.h1>
+            <motion.h1 initial={{ opacity: 0.1 }} animate={{ opacity: 1 }} transition={{ duration: 0.99 }}>Wonderful<span>.</span> Workout<span>.</span> Wellbeing</motion.h1>
             <br />
             <br />
+            <p>World’s No. 1 B2B Health Aggregators & Fitness Customer Relationship Support</p>
             <br />
             <br />
-            {/* <p>The Best Wellness CRM</p> */}
             {/* <p>For Wellness Coaches</p> */}
 
             <motion.button ref={ref1} initial="hidden" animate={inView1 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}><a href="#"> Comming Soon </a></motion.button>
@@ -70,9 +70,9 @@ const Homepage = () => {
 
 
           <motion.div className={styles.column2} ref={ref2} initial="hidden" animate={inView2 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>
-            <Image className={styles.mainImg} src="/phone.png" width={480} height={500} />
-            <Image className={styles.screen1} src="/screen1.png" height={330} width={120} />
-            <Image className={styles.screen2} src="/screen2.png" height={330} width={150} />
+            <Image className={styles.mainImg} src="/phone.webp" width={480} height={500} />
+            <Image className={styles.screen1} src="/screen1.webp" height={330} width={120} />
+            <Image className={styles.screen2} src="/screen2.webp" height={330} width={150} />
           </motion.div>
 
         </div>
@@ -82,7 +82,7 @@ const Homepage = () => {
           <div className={styles.row2}>
 
             <div className={styles.column3} >
-              <motion.img src="/greenbag.png" className={styles.greenbag} width={600} height={400} ref={ref3} initial="hidden" animate={inView3 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
+              <motion.img src="/greenbag.webp" className={styles.greenbag} width={600} height={400} ref={ref3} initial="hidden" animate={inView3 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
             </div>
 
 
@@ -139,7 +139,7 @@ const Homepage = () => {
           <div className={styles.rowitem2}>
 
             <div className={styles.paisa}>
-              <motion.img src="/paisa.png" height={140} width={180} ref={ref10} initial="hidden" animate={inView10 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
+              <motion.img src="/paisa.webp" height={140} width={180} ref={ref10} initial="hidden" animate={inView10 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }} loading="lazy"/>
             </div>
 
 
@@ -220,8 +220,8 @@ const Homepage = () => {
           <motion.div className={styles.wellness} ref={ref18} initial="hidden" animate={inView18 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>Wellness &nbsp;  Managed</motion.div>
 
           <motion.div ref={ref19} initial="hidden" animate={inView19 ? 'visible' : 'hidden'} variants={variants} transition={{ duration: TransitionDuration }}>
-            <p className={styles.wellnessp}>The Best Wellness Crm</p>
-            <p className={styles.wellnessp}>For Wellness Coaches</p>
+            <p className={styles.wellnessp}>WellnessZ CRM Offers</p>
+            {/* <p className={styles.wellnessp}>For Wellness Coaches</p> */}
           </motion.div>
 
 
