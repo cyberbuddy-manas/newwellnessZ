@@ -68,12 +68,12 @@ const SigninComponent = () => {
 
             <button className={styles.button}>Sign In</button>
 
-            <div className={styles.notmember}>
+            {/* <div className={styles.notmember}>
               Not a member ? &nbsp; <Link href="/signup"> Register Now</Link>
-            </div>
+            </div> */}
 
             <br />
-
+            <br />
 
           </form>
 

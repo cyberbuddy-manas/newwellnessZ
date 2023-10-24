@@ -17,13 +17,17 @@ function sighnoutuser() { signout(() => Router.replace(`/signin`)) }
 
 
 const CreateBlog = ({ router }) => {
+
     const blogFromLS = () => {
         if (typeof window === 'undefined') { return false; }
         if (localStorage.getItem('blog')) {
             return JSON.parse(localStorage.getItem('blog'));
-        } else { return false; }
+        } else 
+        { return ""; }
 
     };
+
+
     const [body, setBody] = useState(blogFromLS());
     const [checked, setChecked] = useState([]);
     const [categories, setCategories] = useState([]);
@@ -34,6 +38,11 @@ const CreateBlog = ({ router }) => {
         formData.set('body', e);
         if (typeof window !== 'undefined') { localStorage.setItem('blog', JSON.stringify(e));}
     };
+
+
+   
+
+
 
 
     const [values, setValues] = useState({
@@ -60,15 +69,16 @@ const CreateBlog = ({ router }) => {
                 setValues({ ...values, error: data.error });
             } else {
                 setValues({ ...values, title: '', mtitle: '', mdesc: '', slug: '', error: '', photo: '', success: `A new blog titled "${data.title}" is created` });
-
+                setBody('');
+                setCategories([]);
+                
                 let postslug = slugify(slug).toLowerCase();
                 function redirect() {
                     Router.replace(`/blogs/${postslug}`);
                 }
                 setTimeout(redirect, 200)
 
-                setBody('');
-                setCategories([]);
+                
             }
         });
     };
